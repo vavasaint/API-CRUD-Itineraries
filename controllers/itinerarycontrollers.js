@@ -3,17 +3,17 @@ const Itineraries = require("../models/itinerarymodels")
 
 const itineraryControllers = {
     getItinerary: async (req, res) => {
-        let itinerary
+        let itineraries
         let error = null
 
         try {
-            itinerary = await Itineraries.find()
+            itineraries = await Itineraries.find()
         }
         catch
         (err) { error = err }
 
         res.json({
-            response: error ? "Error" : {itinerary} ,
+            response: error ? "Error" : { itineraries } ,
             success: error ? false : true,
             error: error
         })
@@ -47,7 +47,7 @@ const itineraryControllers = {
         try {
             itinerary = await new Itineraries({
                 
-                nameItinerary: nameItinerary,
+                        nameItinerary: nameItinerary,
                         nameUser: nameUser,
                         userImage: userImage,
                         price: price,
