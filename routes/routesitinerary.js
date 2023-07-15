@@ -15,8 +15,9 @@ Router.route("/itinerary")
 .put(modifyItinerary)
  
  
-  Router.route("/multiplesitineraries")
+Router.route("/multiplesitineraries")
 .post(addMultiplesItineraries)
+
  
 
 

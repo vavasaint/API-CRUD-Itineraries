@@ -17,5 +17,5 @@ app.use("/api", Router)
 
 
 app.listen(PORT,()=>{
-    console.log('SERVIDOR CORRIENDO:'+app.get("port"))
+    console.log('SERVIDOR CORRIENDO:'+ app.get("port"))
 })
