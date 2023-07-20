@@ -1,7 +1,7 @@
 const Router= require("express").Router()
 
 const itineraryControllers = require("../controllers/itinerarycontrollers")
-const {getItinerary,getOneItinerary,removeItinerary, modifyItinerary, addItinerary,addMultiplesItineraries} = itineraryControllers  
+const {getItinerary,getOneItinerary,removeItinerary, modifyItinerary, addItinerary,addMultiplesItineraries, getItinerariesByCity} = itineraryControllers  
 
 
 Router.route("/itinerary")
@@ -17,8 +17,6 @@ Router.route("/itinerary")
  
 Router.route("/multiplesitineraries")
 .post(addMultiplesItineraries)
-
- 
 
 
 module.exports = Router;

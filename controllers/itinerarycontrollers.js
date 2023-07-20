@@ -141,8 +141,7 @@ const itineraryControllers = {
             error: error
         })
 
-    },
-
+    }
 
 }
 
